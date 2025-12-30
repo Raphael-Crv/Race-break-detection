@@ -64,6 +64,30 @@ A pause ends when **BOTH** conditions are met:
 1. Maximum distance traveled exceeds threshold (default: > 30m over 30s)
 2. Average pace becomes faster (default: < 20 min/km = running)
 
+## Research & Methodology
+
+This algorithm was developed through extensive testing and iteration. The complete research process, including:
+- Initial hypothesis and testing approach
+- Parameter tuning with real GPX files
+- False positive/negative analysis
+- Iterative refinement of detection criteria
+
+**📊 [View detailed research documentation](https://docs.google.com/document/d/1Mf7ShNMzFmlTMIcY1i9Uo3ZHJUqQJ0eA4o_vhFmvhak/edit?usp=sharing)**
+
+### Key Findings from Research
+- Point density is crucial to avoid false pauses (distinguishes GPS drift from actual stops)
+- Speed threshold prevents false detection during normal running
+- Distance-based exit detection is more reliable than pace-based
+- Reactivity varies with pre-pause pace (5-30 seconds detection time)
+
+### Testing Methodology
+The algorithm was validated on:
+- 7+ stationary test recordings (5-20 minutes each)
+- 3 walking activities with intentional breaks
+- Real running activities with known pause locations
+- Edge cases (small movements, GPS drift simulation)
+   
+
 ## Output Example
 ```
 ⏸️  Break detected: 2024-01-15 10:23:45
