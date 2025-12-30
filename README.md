@@ -72,7 +72,7 @@ This algorithm was developed through extensive testing and iteration. The comple
 - False positive/negative analysis
 - Iterative refinement of detection criteria
 
-**📊 [View detailed research documentation](https://docs.google.com/document/d/1Mf7ShNMzFmlTMIcY1i9Uo3ZHJUqQJ0eA4o_vhFmvhak/edit?usp=sharing)**
+**📊 [View detailed research documentation](https://docs.google.com/document/d/1cpBQRvsVWvIAr61CRprHqI5HP_JKtbV1fWqBUMa1ayg/edit?usp=sharing)**
 
 ### Key Findings from Research
 - Point density is crucial to avoid false pauses (distinguishes GPS drift from actual stops)
